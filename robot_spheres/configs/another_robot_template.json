@@ -1,0 +1,19 @@
+{
+  "input_xml": "path/to/robot_only_scene.xml",
+  "output_xml": "path/to/robot_only_spherefit.xml",
+  "source_group": 3,
+  "output_group": 3,
+  "sphere_density": 1.0,
+  "exact_sphere_counts": {
+    "difficult_link_name": 12
+  },
+  "body_names": [],
+  "fit_type": "morphit",
+  "iterations": 200,
+  "coverage_weight": null,
+  "protrusion_weight": null,
+  "compute_metrics": true,
+  "keep_source_collisions": true,
+  "visualization_only": true,
+  "rgba": "0 1 1 0.35"
+}

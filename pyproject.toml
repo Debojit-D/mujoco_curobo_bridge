@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mujoco-curobo-bridge"
+version = "0.1.0"
+description = "Reusable MuJoCo and cuRobo bridge utilities, including MJCF collision-sphere fitting"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "mujoco>=3.1.0",
+  "numpy>=1.24",
+  "trimesh>=4.0",
+]
+
+[project.scripts]
+mujoco-fit-spheres = "robot_spheres.cli:main"
+
+[tool.setuptools]
+packages = ["bridge", "robot_spheres", "viewer", "world"]
+
+[tool.setuptools.package-data]
+robot_spheres = ["README.md", "configs/*.json"]
