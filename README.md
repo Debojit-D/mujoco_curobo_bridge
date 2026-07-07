@@ -93,9 +93,9 @@ history:
 ```bash
 git submodule add \
   https://github.com/Debojit-D/mujoco_curobo_bridge.git \
-  mujoco_curobo_bridge
+  utils/mujoco_curobo_bridge
 git submodule update --init --recursive
-python -m pip install -e ./mujoco_curobo_bridge
+python -m pip install -e ./utils/mujoco_curobo_bridge
 ```
 
 Keep robot assets and robot-specific sphere profiles in the parent project.
